@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('/auth/login');
 });
 //  Route::view('/blogs','/design/blog');
-//  Route::view('/home','/home');
+// Route::view('/home','/home');
 
 //BLOGS
  Route::get('/contentupload','BlogController@cms')->name('writeblog');
