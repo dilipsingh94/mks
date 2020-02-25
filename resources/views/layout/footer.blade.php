@@ -3,22 +3,23 @@
         <div class="row mb-5">
             <div class="col-md-4">
                 <h3 class="footer-heading mb-4">About Us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat reprehenderit magnam deleniti quasi saepe, consequatur atque sequi delectus dolore veritatis obcaecati quae, repellat eveniet omnis, voluptatem in. Soluta, eligendi, architecto.</p>
+                <p>A P2P Lending Company</p>
             </div>
             <div class="col-md-3 ml-auto">
                 <!-- <h3 class="footer-heading mb-4">Navigation</h3> -->
                 <ul class="list-unstyled float-left mr-5">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Advertise</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Subscribes</a></li>
+                    <li><a href="/videos/show">Videos</a></li>
+                    <li><a href="/audios/show">Audio</a></li>
+                    <li><a href="/show/presentations">Presentations</a></li>
+                    <li><a href="/show/document">Documents</a></li>
+                    <li><a href="/blogs/show">Blogs</a></li>
                 </ul>
-                <ul class="list-unstyled float-left">
+                {{-- <ul class="list-unstyled float-left">
                     <li><a href="#">Travel</a></li>
                     <li><a href="#">Lifestyle</a></li>
                     <li><a href="#">Sports</a></li>
                     <li><a href="#">Nature</a></li>
-                </ul>
+                </ul> --}}
             </div>
             <div class="col-md-4">
                 <div>
