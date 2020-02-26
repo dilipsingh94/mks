@@ -99,11 +99,11 @@
                                 <div class="card m-t-15" style="width:300px;">
                                     <div class="card-body">
                                         <div class="d-flex flex-row">
-                                            <div class="round align-self-center round-info "><i class="fa fa-audio-camera" aria-hidden="true"></i>
+                                            <div class="round align-self-center round-info "><i class="fa fa-volume-up" aria-hidden="true"></i>
                                             </div>
                                             <div class="m-l-10 align-self-center">
                                                 <h6 class="text-muted m-b-0">Total Audio</h6>
-                                            <h5 class="m-b-0"></h5>
+                                            <h5 class="m-b-0">{{$newaudio->count('$id')}}</h5>
                                             </div>
                                         </div>
                                     </div>

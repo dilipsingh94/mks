@@ -20,8 +20,9 @@
                   </div>
                   
                   <div class="video-page text-success">
-                     {{$ppt->name}}  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
-                  <a href="/uploads/{{$ppt->presentation}}" download="{{$ppt->presentation}}"><i class="fa fa-download" aria-hidden="true"></i></a>
+                     {{$ppt->name}}<i class="fas fa-check-circle text-success"></i>
+                     <a href="/uploads/{{$ppt->presentation}}" download="{{$ppt->presentation}}"> 
+                     <i class="fa fa-download" aria-hidden="true" style="float:right;"></i></a>
                   </div>
                   <div class="video-view"><i class="fas fa-calendar-alt"></i> {{$ppt->created_at->format('d-m-y')}}
                   </div>

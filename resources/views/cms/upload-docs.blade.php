@@ -32,7 +32,7 @@
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="ppt title">Document Title</label>
-                                            <input type="text" class="form-control form-control-line" placeholder="Enter Presentation title" name="documenttitle" required>
+                                            <input type="text" class="form-control form-control-line" placeholder="Enter Document title" name="documenttitle" required>
                                         </div> 
                                     </div>
                                 </div> 
