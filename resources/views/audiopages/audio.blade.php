@@ -12,7 +12,7 @@
             @foreach ($newaudio as $audio)
                <div class="col-lg-3 mb-4">
                   <div class="embed-responsive embed-responsive-16by9">
-                     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{$audio->embedlink}}"></iframe> 
+                     <iframe width="100%" height="166" autoplay="false" scrolling="no" frameborder="no" src="{{$audio->embedlink}}"></iframe> 
                   </div>
                   <div >
                      <div class="video-title">
