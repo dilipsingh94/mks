@@ -7,7 +7,7 @@
     <div class="site-mobile-menu-body"></div>
 </div>
   
-<header class="site-navbar shadow" role="banner">
+<header class="navbar site-navbar shadow" role="banner">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-4 site-logo">

@@ -31,8 +31,10 @@ class mksHomeController extends Controller
     }
 
     public function index() {
-        $blog = Blog::orderby('id', 'desc')->paginate(8);
-        return view('mks-pages.home-page',compact('blog'));
+        $blog = Blog::orderby('id', 'desc')->paginate(6);
+        $video = Videos::orderby('id', 'desc')->paginate(3);
+        $pressnote = Document::orderby('id', 'desc')->paginate(4);
+        return view('mks-pages.home-page',compact('blog', 'video', 'pressnote'));
     }
     
     public function blogs() {
@@ -56,7 +58,7 @@ class mksHomeController extends Controller
     }
 
     public function Pressnotes() {
-        $pressnote = Document::orderby('id', 'desc')->paginate(8);
+        $pressnote = Document::orderby('id', 'desc')->paginate();
         return view('mks-pages.pressnote',compact('pressnote',$pressnote));
     }
     

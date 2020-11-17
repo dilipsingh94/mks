@@ -2,7 +2,7 @@
 @section('content')
     <div class="site-section">
         <div class="container">            
-            <div class="row py-4">
+            <div class="row py-4" style="margin-top: 5%">
             @foreach ($video as $post)
                 <div class="col-lg-4 mb-4">
                     <div class="entry2">

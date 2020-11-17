@@ -2,7 +2,7 @@
 @section('content')
     <section class="site-section py-lg">
         <div class="container">        
-            <div class="row blog-entries element-animate">
+            <div class="row blog-entries element-animate" style="margin-top: 5%">
                 {{ csrf_field() }}
                 <div class="col-md-12 col-lg-9 main-content">            
                     <div class="post-content-body">
@@ -28,10 +28,10 @@
                             <div class="bio-body">
                                 <h2>{{ $video->uploadername }}</h2>
                                 <p class="social">
-                                    <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
-                                    <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
-                                    <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
-                                    <a href="#" class="p-2"><span class="fa fa-youtube-play"></span></a>
+                                    <a target="_blank" href="https://www.facebook.com/mksnews2019/" class="p-2"><span class="fa fa-facebook"></span></a>
+                                    <a target="_blank" href="https://twitter.com/mksnews2019" class="p-2"><span class="fa fa-twitter"></span></a>
+                                    <a target="_blank" href="https://www.instagram.com/dilipsir.4444/?igshid=bt4lx57gsfy7" class="p-2"><span class="fa fa-instagram"></span></a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCvEWO5VLjnaLw7Q_c8jdvUw" class="p-2"><span class="fa fa-youtube-play"></span></a>
                                 </p>
                             </div>
                         </div>

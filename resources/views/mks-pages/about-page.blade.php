@@ -36,10 +36,10 @@
                         <h6> <strong>Cheif Editor</strong></h6>
                         <h6>Contact No. – +91 8279769983, +91 7900749983</h6>
                         <h6>Email-id – chiefeditor@mksnews.ind.in</h6>
-                        <a href="https://www.facebook.com/sudarshan.prasad.526" class="p-2"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/dilipsir.4444/?igshid=bt4lx57gsfy7" class="p-2"><i class="fa fa-instagram"></i></a>
-                        <a href="https://twitter.com/Sudarsh73265000" class="p-2"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/channel/UCvEWO5VLjnaLw7Q_c8jdvUw" class="p-2"><i class="fa fa-youtube"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/sudarshan.prasad.526" class="p-2"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/dilipsir.4444/?igshid=bt4lx57gsfy7" class="p-2"><i class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://twitter.com/Sudarsh73265000" class="p-2"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCvEWO5VLjnaLw7Q_c8jdvUw" class="p-2"><i class="fa fa-youtube"></i></a>
                     </p>
                 </div>
             </div>

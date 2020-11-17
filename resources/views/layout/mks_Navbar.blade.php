@@ -1,4 +1,4 @@
-<header class="site-navbar" role="banner">
+<header class="site-navbar" role="banner" style="position: fixed; background: white;">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-4 site-logo">
