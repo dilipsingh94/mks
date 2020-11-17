@@ -1,4 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/mks_styles.css": "/css/mks_styles.css",
+    "/js/mks_scripts.js": "/js/mks_scripts.js"
 }

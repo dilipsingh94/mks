@@ -1,123 +1,58 @@
-@extends('layout.app')
+@extends('layout.admin_Main')
 @section('content')
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header" style="background-color:#FFFFFF;"><b>DASHBOARD</b></div>
-            </div>
- 
-            <div class="row">
-                <div class="col-12">
-                    <div class="col-md-6" style="float:left;">
-                        <div class="card shadow  mt-5 ">
-                            <div class="card-body " style="background-color:#EEEBEB; border-radius:5px;">
-                                {{-- @if (session('status'))
-                                    <div class="alert alert-success" role="alert">
-                                        {{ session('status') }}
-                                    </div>
-                                @endif --}}
+    <div class="site-section bg-light">
+        <div class="container-fluid mt-2">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card shadow rounded m-t-10 m-b-10">
+                            <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="ml-3" style="font-size:30px;text-decoration:none;color:#000000;">Write a Blog</p>
-                                    </div><br>
-                                    <div class="col-md-4">
-                                        <a href="/contentupload" class="btn btn-info btn-rounded mt-2 ml-5" style="width:120px;"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add Blog</a>
+                                    <div class="col align-self-center">
+                                        <img src="{{ asset('./mks-resources/editor.png')}}" alt="Blog image" class="img-fluid mb-5">
+                                    </div>
+                                    <div class="col m-l-10 align-self-center">
+                                        <h6 class="text-muted m-b-0">Total BlogPosts</h6>
+                                        <h4 class="m-b-0">{{ $blog->count('$id') }}</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
-                    <div class="col-md-6" style="float:right;">
-                        <div class="card shadow mt-5" >
-                            <div class="card-body" style="background-color:#EEEBEB;">
-                                {{-- @if (session('status'))
-                                    <div class="alert alert-success" role="alert">
-                                        {{ session('status') }}
-                                    </div>
-                                @endif --}}
+                    <div class="col-sm-4">
+                        <div class="card shadow rounded m-t-10 m-b-10">
+                            <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="ml-3" style="font-size:30px;text-decoration:none;color:#000000;">Add New Video</p>
-                                    </div><br>
-                                    <div class="col-md-4">
-                                        <a href="/videodetails" class="btn btn-info btn-rounded mt-2 ml-5" style="width:120px;"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add Video</a>
+                                    <div class="col align-self-center">
+                                        <img src="{{ asset('./mks-resources/video.png')}}" alt="video image" class="img-fluid mb-5">
+                                    </div>
+                                    <div class="col m-l-10 align-self-center">
+                                        <h6 class="text-muted m-b-0">Total Video's</h6>
+                                        <h4 class="m-b-0">{{ $video->count('$id') }}</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="col-md-6" style="float:left;">
-                        <div class="card shadow mt-5">
-                            <div class="card-body" style="background-color:#EEEBEB;">
-                                {{-- @if (session('status'))
-                                    <div class="alert alert-success" role="alert">
-                                        {{ session('status') }}
-                                    </div>
-                                @endif --}}
+                    <div class="col-sm-4">
+                        <div class="card shadow rounded m-t-10 m-b-10">
+                            <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="ml-3" style="font-size:30px;text-decoration:none;color:#000000;">Add New Audio</p>
-                                    </div><br>
-                                    <div class="col-md-4">
-                                        <a href="/audio" class="btn btn-info btn-rounded mt-2 ml-5" style="width:120px;"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add Audio</a>
+                                    <div class="col align-self-center">
+                                        <img src="{{ asset('./mks-resources/pdf.png')}}" alt="pdf image" class="img-fluid mb-5">
+                                    </div>
+                                    <div class="col m-l-10 align-self-center">
+                                        <h6 class="text-muted m-b-0">Total Pressnotes</h6>
+                                        <h4 class="m-b-0">{{ $pressnotes->count('$id') }}</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                
-                    <div class="col-md-6" style="float:right;">
-                        <div class="card shadow mt-5" >
-                            <div class="card-body" style="background-color:#EEEBEB;">
-                                {{-- @if (session('status'))
-                                    <div class="alert alert-success" role="alert">
-                                        {{ session('status') }}
-                                    </div>
-                                @endif --}}
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="ml-3" style="font-size:30px;text-decoration:none;color:#000000;">Add Presentation</p>
-                                    </div><br>
-                                    <div class="col-md-4">
-                                        <a href="/upload-presentations" class="btn btn-info btn-rounded mt-2 ml-5" style="width:120px;"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add Docs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" style="float:left;">
-                        <div class="card shadow mt-5" >
-                            <div class="card-body" style="background-color:#EEEBEB;">
-                                {{-- @if (session('status'))
-                                    <div class="alert alert-success" role="alert">
-                                        {{ session('status') }}
-                                    </div>
-                                @endif --}}
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <p class="ml-3" style="font-size:30px;text-decoration:none;color:#000000;">Add Document</p>
-                                    </div><br>
-                                    <div class="col-md-4">
-                                        <a href="/upload-documents" class="btn btn-info btn-rounded mt-2 ml-5" style="width:120px;"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add Docs</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
 
 
