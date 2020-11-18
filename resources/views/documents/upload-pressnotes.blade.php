@@ -1,12 +1,6 @@
 @extends('layout.admin_Main')
 @section('content')
 
-    <style>
-        .progress { position:relative; width:100%; }
-        .bar { background-color: #b5076f; width:0%; height:20px; }
-        .percent { position:absolute; display:inline-block; left:50%; color: #040608;}
-    </style>
-
     <div class="container-fluid mt-3">
         <div class="row" style="padding: 2%">
             <div class="col-sm-2"></div>
@@ -41,7 +35,7 @@
                                     </div>
                                     <div class="col-sm-12"> 
                                         <div class="form-group">
-                                            <label>Document File</label>
+                                            <label>Document File <small class="text-danger">(Maximum fileupload size 30MB)</small> </label>
                                             <div class="input-group">
                                                 <div class="custom-file">
                                                     <input type="file" class="custom-file-input" id="inputGroupFile01" name="documentfile" required>

@@ -214,7 +214,7 @@ class mksHomeController extends Controller
         $this->validate($request,[
             'uploadername'=>'required',
             'documenttitle'=>'required',
-            'documentfile'=>'required|mimes:pdf|max:5120'
+            'documentfile'=>'required|mimes:pdf|max:30720'
         ]);
         
         $newdocs = new Document();
