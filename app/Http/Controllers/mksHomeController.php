@@ -24,7 +24,7 @@ class mksHomeController extends Controller
      */
 
     public function TestView() {
-        return view();
+        return view('testhome');
     }
 
     public function Admin_Home() {
