@@ -12,7 +12,7 @@
 */
 Auth::routes();
 
-Route::view('/', 'mksHomeController@TestView');
+Route::view('/', 'testhome');
 
 Route::get('home', 'mksHomeController@Admin_Home');
 
