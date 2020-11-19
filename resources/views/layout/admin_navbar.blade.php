@@ -1,7 +1,10 @@
 <div class="site-mobile-menu">
     <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
+            <span>
+                <i class="fa fa-times js-menu-toggle"></i>
+            </span>
+            {{-- <span class="icon-close2 "></span> --}}
         </div>
     </div>
     <div class="site-mobile-menu-body"></div>
@@ -21,8 +24,7 @@
                         <li><a href="{{ url('home') }}"><i class="fa fa-home fa-2x text-danger"></i></a></li>
                         <li><a href="{{ url('blogpost/list') }}">Blogs</a></li>
                         <li><a href="{{ url('videos/list') }}">Video</a></li>
-                        <li><a href="{{ url('document/list') }}">Pressnotes</a></li>
-                        <span>|</span>
+                        <li><a href="{{ url('document/list') }}">Pressnotes</a> </li>
                         {{-- <li><a href="/audios/show">Audio</a></li> --}}
                         {{-- <li><a href="/show/presentations">Presentations</a></li> --}}
                         {{-- <li><a href="#"> <i class="fa fa-sign-out"></i> Logout</a></li> --}}
@@ -38,13 +40,13 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <li class="nav-item ">
+                                {{-- <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                    <i class="fa fa-user"></i> {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                                </a> --}}
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                {{-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> --}}
+                                    <a class="nav-link" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
                                         <i class="fa fa-sign-out"></i> {{ __('Logout') }}
@@ -53,13 +55,13 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-                                </div>
+                                {{-- </div> --}}
                             </li>
                         @endguest
 
                     </ul>
                 </nav>
-                <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a></div>
+                <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><i class="fa fa-bars"></i></span></a></div>
             </div>
         </div>
     </div>

@@ -10,7 +10,7 @@
     </div> --}}
     <div class="row justify-content-center" style="padding: 3%">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card" style="margin-top:15%">
                 <div class="card-header text-info"> <i class="fa fa-user fa-2x text-info"></i>  &nbsp; {{ __('Internal User Login') }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
