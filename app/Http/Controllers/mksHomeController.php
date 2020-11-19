@@ -23,6 +23,10 @@ class mksHomeController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+    public function TestView() {
+        return view();
+    }
+
     public function Admin_Home() {
         $blog = Blog::all();
         $video = Videos::all();
