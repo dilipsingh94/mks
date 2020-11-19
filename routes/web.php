@@ -51,3 +51,8 @@ Route::post('document/store', 'mksHomeController@PressnoteStore')->name('pressno
 Route::get('document/{id}/edit', 'mksHomeController@PressnoteEdit')->name('pressnote.edit');
 Route::post('document/update/{id}', 'mksHomeController@PressnoteUpdate')->name('pressnote.update');
 Route::get('document/{id}/delete', 'mksHomeController@PressnoteDelete')->name('pressnote.delete');
+
+
+Route::get('test', function(){
+    return utf8_encode(phpinfo());
+});
