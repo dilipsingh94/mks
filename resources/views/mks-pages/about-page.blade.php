@@ -7,7 +7,7 @@
                     {{-- <img src="mks-resources/mks-logo.png" alt="Image" class="img-fluid"> --}}
                     <img src="mks-resources/symbol-icon.png" style="padding-top: 20%;" alt="Image" class="img-fluid">
                 </div>
-                <div class="col-md-7 mr-auto order-md-1">
+                <div class="col-md-7 mr-auto order-md-1" style="padding-top: 3%;">
                     <h2>About MKS News</h2>
                     <p class="text-justify">Welcome to Muradnagar ki shaan, your number one source for latest national news. We’re dedicated to providing you the best of news, with an emphasis on all social, political, cultural, national news. Muradnagar ki shaan is RNI registered news paper (RNI No. UPHIN/2019/78722).</p>
                     <p class="text-justify">Founded in 2019 by Mr. Sudarshan Prasad, Muradnagar ki shaan has come a long way from its beginnings in Ghaziabad UP. When Mr. Sudarshan Prasad first started out, his passion for news drove them to start their own business.</p>
