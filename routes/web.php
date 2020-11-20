@@ -12,9 +12,9 @@
 */
 Auth::routes();
 
-Route::get('test', function(){
-    return utf8_encode(phpinfo());
-});
+// Route::get('test', function(){
+//     return utf8_encode(phpinfo());
+// });
 
 Route::get('/', 'mksHomeController@index');
 
