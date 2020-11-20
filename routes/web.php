@@ -12,11 +12,13 @@
 */
 Auth::routes();
 
-// Route::view('/', 'testhome');
-
-Route::get('home', 'mksHomeController@Admin_Home');
+Route::get('test', function(){
+    return utf8_encode(phpinfo());
+});
 
 Route::get('/', 'mksHomeController@index');
+
+Route::get('home', 'mksHomeController@Admin_Home');
 Route::get('about', 'mksHomeController@about_mks');
 
 //Blogs
@@ -53,8 +55,3 @@ Route::post('document/store', 'mksHomeController@PressnoteStore')->name('pressno
 Route::get('document/{id}/edit', 'mksHomeController@PressnoteEdit')->name('pressnote.edit');
 Route::post('document/update/{id}', 'mksHomeController@PressnoteUpdate')->name('pressnote.update');
 Route::get('document/{id}/delete', 'mksHomeController@PressnoteDelete')->name('pressnote.delete');
-
-
-// Route::get('test', function(){
-//     return utf8_encode(phpinfo());
-// });
