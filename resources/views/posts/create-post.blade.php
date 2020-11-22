@@ -14,7 +14,8 @@
                                     <div class="col-sm-4">
                                         <div class="form-group">
                                             <label for="writer">Author </label>
-                                            <input type="text" class="form-control" value="{{\Auth::user()->name}}" name="writer" required readonly> 
+                                            {{-- <input type="text" class="form-control" value="{{\Auth::user()->name}}" name="writer" required readonly>  --}}
+                                            <input type="text" class="form-control" name="writer" required> 
                                         </div>
                                     </div>
                 

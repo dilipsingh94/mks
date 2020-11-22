@@ -57,7 +57,7 @@
                                         <th>S.N</th>
                                         <th id="post">Title</th>
                                         <th>Category</th>
-                                        {{-- <th id="description">Decription</th> --}}
+                                        <th id="description">Decription</th>
                                         <th id="writer_name">Author</th>
                                         <th id="created_date">Created At</th>
                                         <th>Action</th>
@@ -69,7 +69,7 @@
                                         <td class="text12">{{$post->id}}</td>
                                         <td class="text12">{{$post->posttitle}}</td>
                                         <td ><span class="badge badge-info">{{ $post->category }}</span></td>
-                                        {{-- <td >{{$post->description}}</td> --}}
+                                        <td >{{$post->description}}</td>
                                         <td class="text12">{{$post->writer}}</td>
                                         <td class="text12">{{$post->created_at->format('d-m-Y')}}</td>
                                         <td>

@@ -8,12 +8,13 @@
                     <div class="post-content-body">
                         <div class="row">
                             <div class="col-md-12 mb-4">
+                                <h2>{{ $blog->posttitle }}</h2>
                                 <img src="{{ asset('uploads/'.$blog->thumbnail) }}" alt="Image placeholder" class="img-fluid rounded">
                             </div>
                         </div>
                         <p class="post-category text-white bg-secondary">{{ $blog->category }}</p>
-                        <h2>{{ $blog->posttitle }}</h2>
-                        <p class="text-justify">{{ $blog->blog }}</p>
+                        <h3>{{ $blog->description }}</h3>
+                        <p class="text-justify text-black">{{ $blog->blog }}</p>
                     </div>
                 </div>
                 <!-- END main-content -->
