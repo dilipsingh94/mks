@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Auth;
 use DB;
 use Storage;
+use App\Auth;
 use App\Blog;
+use App\User;
 use App\Videos;
 use App\Document;
 
@@ -39,12 +40,17 @@ class mksHomeController extends Controller
     
     public function blogs() {
         $blog = Blog::orderby('id', 'desc')->paginate(8);
-        return view('mks-pages.blog-page',compact('blog'));
+        // $user = User::where('id', Auth::id())->first();
+        $user = User::all()->first();
+        // return $user;
+        return view('mks-pages.blog-page',compact('blog', 'user'));
     }
 
     public function blogs_view($id) {
         $blog = Blog::find($id);
-        return view('mks-pages.blog-view-page')->with('blog',$blog);
+        $user = User::all()->first();
+        // return view('mks-pages.blog-view-page')->with('blog',$blog);
+        return view('mks-pages.blog-view-page', compact('blog', 'user'));
     }
 
     public function videos() {

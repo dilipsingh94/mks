@@ -51,8 +51,8 @@
                                             <label>Thumbnail Image</label>
                                             <div class="input-group">
                                                 <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="inputGroupFile01" name="thumbnail" required>
-                                                    <label class="custom-file-label" for="inputGroupFile01">Choose Thumbnail to upload</label>
+                                                    <input type="file" class="form-control" id="thumbnail" name="thumbnail" required>
+                                                    {{-- <label class="custom-file-label" for="inputGroupFile01">Choose Thumbnail to upload</label> --}}
                                                 </div>
                                             </div>
                                         </div>

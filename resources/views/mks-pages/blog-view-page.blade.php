@@ -23,7 +23,7 @@
                     <!-- END sidebar-box -->
                     <div class="sidebar-box">
                         <div class="bio text-center">
-                            <img src="{{ asset('./mks-resources/editor.png')}}" alt="Image Placeholder" class="img-fluid mb-5">
+                            <img src="{{ asset('uploads/'.$user->avtar) }}" alt="Image Placeholder" class="img-fluid mb-5">
                             <div class="bio-body">
                                 <h2>{{ $blog->writer }}</h2>
                                 <p class="social">
