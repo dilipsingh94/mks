@@ -73,6 +73,11 @@ body {
   color: #212529;
   text-align: left;
   background-color: #f8fafc;
+  -youbkit-touch-callout: none;
+  -youbkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;	
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
