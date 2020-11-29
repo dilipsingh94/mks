@@ -14,5 +14,10 @@
             
             <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
             <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css">
+            
+            <!-- ShareThis BEGIN -->
+            <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fc39e0be3acfa0012ca6b36&product=inline-share-buttons" async="async"></script>
+            <!-- ShareThis END -->
+
         </head>
         <body>

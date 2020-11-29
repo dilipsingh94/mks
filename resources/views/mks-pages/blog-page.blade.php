@@ -12,7 +12,7 @@
                             <h5>{{ $post->posttitle }}</h5>
                             <div class="post-meta align-items-center text-left clearfix">
                                 <figure class="author-figure mb-0 mr-3 float-left">
-                                    <img src="{{ asset('uploads/'.$user->avtar) }}" alt="Repoter Image" height="30" width="30" class="img-fluid">
+                                    <img src="{{ asset('mks-resources/symbol-icon.png') }}" alt="Repoter Image" height="30" width="30" class="img-fluid">
                                 </figure>
                                 <span class="d-inline-block mt-1 text-danger text-uppercase" >By&nbsp;{{$post->writer}}</span>
                                 <span class="text-danger">&nbsp;-&nbsp; {{$post->created_at->format('d-m-Y')}}</span>

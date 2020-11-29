@@ -24,8 +24,8 @@
                         @endif
 
                         @if(\Session::has('success'))
-                            <div class="success alert-success alert-dismissable">
-                                <p>{{\Session::get('success')}}</p>
+                            <div class="success alert-success alert-dismissable text-center rounded shadow">
+                                <h6>{{\Session::get('success')}} | <a href="https://mksnews.ind.in/blogs" target="_blank">View Post</a></h6>
                             </div>
                         @endif 
                         

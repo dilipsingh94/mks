@@ -48,9 +48,11 @@ class mksHomeController extends Controller
 
     public function blogs_view($id) {
         $blog = Blog::find($id);
-        $user = User::all()->first();
+        $blogpost = Blog::orderby('id', 'desc')->paginate(4);
+        // return $blog;
+        // $user = User::all()->first();
         // return view('mks-pages.blog-view-page')->with('blog',$blog);
-        return view('mks-pages.blog-view-page', compact('blog', 'user'));
+        return view('mks-pages.blog-view-page', compact('blog', 'blogpost'));
     }
 
     public function videos() {
@@ -285,9 +287,6 @@ class mksHomeController extends Controller
         $newdocs->delete();
         return redirect()->route('pressnote.list')->with('success','Document Deleted Succesfully');
     }
-
-
-
 
 
 
