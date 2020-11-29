@@ -48,7 +48,7 @@ class mksHomeController extends Controller
 
     public function blogs_view($id) {
         $blog = Blog::find($id);
-        $blogpost = Blog::orderby('id', 'desc')->paginate(4);
+        $blogpost = Blog::orderby('id', 'asc')->paginate(4);
         // return $blog;
         // $user = User::all()->first();
         // return view('mks-pages.blog-view-page')->with('blog',$blog);
