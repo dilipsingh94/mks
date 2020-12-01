@@ -1,4 +1,4 @@
-@include('layout.mks_Header')
+@include('layout.admin_Header')
 <div class="site-wrap">
     @include('layout.admin_navbar')
     @yield('content')

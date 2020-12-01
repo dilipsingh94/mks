@@ -1,4 +1,4 @@
-@extends('layout.mks_Main')
+@extends('layout.admin_Main')
 @section('content')
 <div class="container">
     {{-- <div class="col-md-12 text-right">
