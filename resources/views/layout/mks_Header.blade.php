@@ -4,10 +4,10 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             
-            {{-- <meta property="og:url" content="https://www.mksnews.ind.in/{{ url('blog/'.$post->id.'/view') }}" /> --}}
-            <meta property="og:url" content="https://www.mksnews.ind.in/blogs" />
+            <meta property="og:url" content="https://www.mksnews.ind.in/{{ url('blog/'.$post->id.'/view') }}" />
             <meta property="og:type" content="article" />
             <meta property="og:title" content="{{ $post->posttitle }}" />
+            <meta property="og:description" content="{{ $post->description }}" />
             <meta property="og:image" content="{{ asset('uploads/'.$post->thumbnail) }}" />
 
             <link rel="icon" type="image/png/svg" sizes="20x20" href="{{ asset('./mks-resources/symbol-icon.png')}}">
