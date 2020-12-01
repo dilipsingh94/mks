@@ -4,6 +4,8 @@
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             
+            <meta name="facebook-domain-verification" content="ixmybugnoi7z3gelvw3j8xzk5vgz0m" />
+            
             <meta property="og:url" content="https://www.mksnews.ind.in/{{ url('blog/'.$post->id.'/view') }}" />
             <meta property="og:type" content="article" />
             <meta property="og:title" content="{{ $post->posttitle }}" />
