@@ -23,9 +23,9 @@
 
             <meta property="og:url" content="https://www.mksnews.ind.in/{{ url('blog/'.$post->id.'/view') }}" />
             <meta property="og:type" content="article" />
-            <meta property="og:title" content="{{ $post->posttitle }}" />
+            {{-- <meta property="og:title" content="{{ $post->/* posttitle }}" />
             <meta property="og:author" content="{{ $post->writer }}" />
-            <meta property="og:image" content="{{ asset('uploads/'.$post->thumbnail) }}" />
+            <meta property="og:image" content="{{ asset('uploads/'.$post->thumbnail) }}" /> */ --}}
             
         </head>
         <body>
