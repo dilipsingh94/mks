@@ -40,17 +40,9 @@
         });
     </script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-        $(".btn-success").click(function(){ 
-            var html = $(".clone").html();
-            $(".increment").after(html);
-        });
-        $("body").on("click",".btn-danger",function(){ 
-            $(this).parents(".control-group").remove();
-        });
-        });
-    </script>
+    <!-- ShareThis BEGIN -->
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fc39e0be3acfa0012ca6b36&product=inline-share-buttons" async="async"></script>
+    <!-- ShareThis END -->
 
   </body>
 </html>

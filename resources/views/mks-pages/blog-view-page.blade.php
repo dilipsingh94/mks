@@ -18,8 +18,9 @@
                         <p class="post-category text-white bg-secondary">{{ $blog->category }}</p>
                         <h3>{{ $blog->description }}</h3>
                         <p class="text-justify text-black">{{ $blog->blog }}</p>
-                        <!-- powr BEGIN -->
-                        <div class="powr-social-feed" id="sharethis-social-media-feed-5fc39df9a2fb12001170b0c5"></div><!-- powr END -->
+                        <div>
+                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fmksnews.ind.in%2F&width=145&layout=button_count&action=like&size=small&share=true&height=46&appId" width="145" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
                     </div>
                     <div class="bio">
                         <div class="bio-body">
@@ -44,15 +45,20 @@
                 <div class="col-sm-4 sidebar">                    
                     <h5 style="font-size: 30px; font-weight: bold;">Advertisements</h5>
                     <!-- END sidebar-box -->
-                    {{-- <div class="sidebar-box">
+                    <div class="sidebar-box">
                         <div class="text-center">
-                            <img src="{{ asset('mks-resources/ad1.jpeg') }}" alt="Image" class="mb-3" width="100%">
+                            {{-- <img src="{{ asset('mks-resources/ad1.jpeg') }}" alt="Image" class="mb-3" width="100%"> --}}
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmksnews2019%2F&tabs=timeline&width=340&height=420&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="420" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
-                    </div> --}}
+                    </div>
                     <!-- END sidebar-box --> 
                 </div>
                 {{-- @endforeach --}}
                 <!-- END sidebar -->
+
+                <div class="col-sm-12">
+                    <div class="powr-social-feed" id="6663a8c0_1606814951"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+                </div>
             </div>
             <hr>
             <div class="row">

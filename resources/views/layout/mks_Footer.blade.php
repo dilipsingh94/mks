@@ -36,7 +36,7 @@
                     <a href="mailto:chiefeditor@mksnews.ind.in"><span class="fa fa-envelope p-2"></span></a>
                 </p>
                 <a href="/home" class="text-black h2 mb-0">
-                    <img src="{{ asset('./mks-resources/mks-logo.png') }}" alt="MKS-News LOGO" width="100%">
+                    <img src="{{ asset('./mks-resources/mks-footer.jpg') }}" alt="MKS-News LOGO" width="100%">
                 </a>
             </div>
         </div>

@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-4 site-logo">
                 <a href="{{url('/')}}" class="text-black h2 mb-0">
-                    <img src="{{ asset('./mks-resources/mks-logo.png') }}" alt="MKS-News LOGO" width="100%" style="padding: 2%;">
+                    <img src="{{ asset('./mks-resources/MKS-LOGO.png') }}" alt="MKS-News LOGO" width="100%" style="padding: 2%;">
                 </a>
             </div>
 

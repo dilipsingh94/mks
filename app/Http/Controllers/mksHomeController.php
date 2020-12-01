@@ -40,18 +40,13 @@ class mksHomeController extends Controller
     
     public function blogs() {
         $blog = Blog::orderby('id', 'desc')->paginate(8);
-        // $user = User::where('id', Auth::id())->first();
         $user = User::all()->first();
-        // return $user;
         return view('mks-pages.blog-page',compact('blog', 'user'));
     }
 
     public function blogs_view($id) {
         $blog = Blog::find($id);
-        $blogpost = Blog::orderby('id', 'asc')->paginate(4);
-        // return $blog;
-        // $user = User::all()->first();
-        // return view('mks-pages.blog-view-page')->with('blog',$blog);
+        $blogpost = Blog::inRandomOrder()->paginate(4);
         return view('mks-pages.blog-view-page', compact('blog', 'blogpost'));
     }
 
@@ -110,10 +105,10 @@ class mksHomeController extends Controller
         else{
             return $request;
             $blog->thumbnail=' ';
-          }
+        }
 
-          $blog->save();
-          return redirect()->route('post.list')->with('success','Blogpost Created Succesfully');
+        $blog->save();
+        return redirect()->route('post.list')->with('success','Blogpost Created Succesfully');
     }
 
     public function EditBlogPost($id) {
@@ -287,10 +282,6 @@ class mksHomeController extends Controller
         $newdocs->delete();
         return redirect()->route('pressnote.list')->with('success','Document Deleted Succesfully');
     }
-
-
-
-
 
 
 }

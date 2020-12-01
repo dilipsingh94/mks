@@ -10,6 +10,9 @@
                         <div class="text">
                             <h2><small>{{ $post->posttitle }}</small></h2>
                             <small class="text-white">{{$post->created_at->format('d-m-Y')}}</small>
+                            <div>
+                                <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fmksnews.ind.in%2F&layout=button_count&size=small&width=77&height=20&appId" width="77" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </div>
                         </div>
                     </a>
                 </div>
