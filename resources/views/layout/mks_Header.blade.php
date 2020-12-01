@@ -5,12 +5,12 @@
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             
             <meta name="facebook-domain-verification" content="ixmybugnoi7z3gelvw3j8xzk5vgz0m" />
-            
-            <meta property="og:url" content="https://www.mksnews.ind.in/{{ url('blog/'.$post->id.'/view') }}" />
+
+            <meta property="og:url" content="{{ url('blog/'.$post->id.'/view') }}" />
             <meta property="og:type" content="article" />
             <meta property="og:title" content="{{ $post->posttitle }}" />
-            <meta property="og:description" content="{{ $post->description }}" />
             <meta property="og:image" content="{{ asset('uploads/'.$post->thumbnail) }}" />
+            <meta property="og:description" content="{{ $post->description }}" />
 
             <link rel="icon" type="image/png/svg" sizes="20x20" href="{{ asset('./mks-resources/symbol-icon.png')}}">
             <title>Mks News</title>
